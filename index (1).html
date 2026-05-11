@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Area Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Sarabun:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="badge">JavaScript Function</div>
+    <h1>Room Area Calculator</h1>
+    <p>คำนวณพื้นที่ห้องด้วยฟังก์ชัน JavaScript<br>Function Declaration &amp; Arrow Function</p>
+  </div>
+
+  <!-- ROOM A -->
+  <div class="card">
+    <div class="card-header">
+      <div class="room-icon a">🏠</div>
+      <div>
+        <div class="card-label">ห้อง A</div>
+        <div class="card-sub">Room A — กรอกขนาดห้อง</div>
+      </div>
+    </div>
+    <div class="input-row">
+      <div class="input-group">
+        <label for="widthA">ความกว้าง</label>
+        <div class="input-wrap">
+          <input type="number" id="widthA" placeholder="0" min="0" step="0.1" />
+          <span class="unit">ม.</span>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="heightA">ความยาว</label>
+        <div class="input-wrap">
+          <input type="number" id="heightA" placeholder="0" min="0" step="0.1" />
+          <span class="unit">ม.</span>
+        </div>
+      </div>
+    </div>
+    <div class="result-box" id="resultA">กรอกขนาดห้องเพื่อดูพื้นที่</div>
+  </div>
+
+  <!-- ROOM B -->
+  <div class="card">
+    <div class="card-header">
+      <div class="room-icon b">🏡</div>
+      <div>
+        <div class="card-label">ห้อง B</div>
+        <div class="card-sub">Room B — กรอกขนาดห้อง</div>
+      </div>
+    </div>
+    <div class="input-row">
+      <div class="input-group">
+        <label for="widthB">ความกว้าง</label>
+        <div class="input-wrap">
+          <input type="number" id="widthB" placeholder="0" min="0" step="0.1" />
+          <span class="unit">ม.</span>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="heightB">ความยาว</label>
+        <div class="input-wrap">
+          <input type="number" id="heightB" placeholder="0" min="0" step="0.1" />
+          <span class="unit">ม.</span>
+        </div>
+      </div>
+    </div>
+    <div class="result-box room-b" id="resultB">กรอกขนาดห้องเพื่อดูพื้นที่</div>
+  </div>
+
+  <!-- BUTTON -->
+  <button class="btn-calc" id="calcBtn">⚡ คำนวณพื้นที่</button>
+
+  <!-- SUMMARY -->
+  <div class="summary" id="summary">
+    <div class="summary-title">📊 สรุปผลลัพธ์</div>
+    <div class="summary-grid">
+      <div class="stat-box">
+        <div class="slabel">ห้อง A</div>
+        <div class="snum a" id="sumA">—</div>
+        <div class="sunit">ตารางเมตร</div>
+      </div>
+      <div class="stat-box">
+        <div class="slabel">ห้อง B</div>
+        <div class="snum b" id="sumB">—</div>
+        <div class="sunit">ตารางเมตร</div>
+      </div>
+    </div>
+    <div class="total-row">
+      <span class="total-label">พื้นที่รวมทั้งหมด</span>
+      <span class="total-val" id="sumTotal">—</span>
+    </div>
+  </div>
+
+  <!-- CODE BLOCK -->
+  <div class="code-section" id="codeSection">
+    <div class="code-header">
+      <div class="code-dots">
+        <span class="d1"></span>
+        <span class="d2"></span>
+        <span class="d3"></span>
+      </div>
+      <span class="code-lang">JAVASCRIPT</span>
+      <button class="copy-btn" id="copyBtn">📋 คัดลอก</button>
+    </div>
+    <pre id="codeDisplay"></pre>
+  </div>
+
+  <div class="footer">
+    Built with ❤️ using Vanilla JavaScript &nbsp;·&nbsp;
+    <a href="https://vercel.com" target="_blank">Deploy on Vercel</a>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
